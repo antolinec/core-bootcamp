@@ -13,7 +13,7 @@ describe("SolidityFunctions", function () {
     const SolidityFunctions = await hre.ethers.getContractFactory(
       "SolidityFunctions"
     );
-    const INITIAL_BALANCE = 1_000_000;
+    const INITIAL_BALANCE = 20_000;
 
     const ctcSolidityFunctions = await SolidityFunctions.deploy(
       INITIAL_BALANCE
@@ -32,10 +32,13 @@ describe("SolidityFunctions", function () {
     it("should add balance", async function () {
       const { ctcSolidityFunctions } = await loadFixture(deploy);
 
-      await ctcSolidityFunctions.addBalance(1_000_000);
+      await ctcSolidityFunctions.addBalance(10_000);
 
-      const balance = await ctcSolidityFunctions.getBalance();
-      console.log("balance is now ", balance);
+      let balance = await ctcSolidityFunctions.getBalance();
+      console.log(" Your balance is now: ", balance);
+      await ctcSolidityFunctions.addBalance(4_000);
+      balance = await ctcSolidityFunctions.getBalance();
+      console.log(" Your balance is now ", balance);
     });
   });
 });

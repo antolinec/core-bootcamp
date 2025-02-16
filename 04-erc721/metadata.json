@@ -1,0 +1,20 @@
+{
+    "name": "jcCalaunan",
+    "description": "HappyKiddo",
+    "symbol": "KJC",
+    "image": "https://i.imgur.com/PkCS9uP.jpeg",
+    "attributes": [
+        {
+            "trait_type": "TYPE",
+            "value": "VALUE"
+        },
+        {
+            "trait_type": "TYPE",
+            "value": "VALUE"
+        },
+        {
+            "trait_type": "TYPE",
+            "value": "VALUE"
+        }
+    ]
+}

@@ -8,15 +8,17 @@ contract SolidityDataTypes {
     mapping(string => uint256) accounts;
 
     constructor() {
-        balance = 10000;
+        balance = 2000;
         owner = address(0);
-        accounts["theblokc"] = 999999;
+        accounts["theblokc"] = 555;
+        accounts["KOJC"] = 231;
 
         // TODO: print the values above using console.log
-        // console.log("balance is ", balance);
+        console.log("balance is ", balance);
 
-        // console.log("owner is ", owner);
+        console.log("owner is ", owner);
 
-        // console.log("account is ", accounts["theblokc"]);
+        console.log("account is ", accounts["theblokc"]);
+        console.log("KryptoniJC is ", accounts["KOJC"]);
     }
 }
